@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DigiAlert - Scam Reporting System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>DigiAlert</h1>
+    <p class="tagline">Report Cyber Scams Safely and Quickly</p>
+
+    <form action="report.php" method="POST" class="report-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="scamType" placeholder="Scam Type (e.g., UPI Fraud)" required>
+      <textarea name="description" placeholder="Describe the Scam in Detail" required></textarea>
+      <button type="submit" class="rotate shake">Submit Report</button>
+    </form>
+  </div>
+</body>
+</html>
