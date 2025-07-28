@@ -1,89 +1,81 @@
-body {
+/* Full height layout to enable centering */
+html, body {
   margin: 0;
+  padding: 0;
+  height: 100%;
   font-family: Arial, sans-serif;
   background: url('https://i.postimg.cc/d1Pf7yx1/Pngtree-cyber-technology-security-network-protection-15459495.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Centered container */
 .container {
   width: 400px;
-  margin: 100px auto;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 15px;
-  box-shadow: 0 0 10px #00ffff;
+  padding: 30px 25px;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 20px;
+  box-shadow: 0 0 15px #00ffff;
+  backdrop-filter: blur(10px);
 }
 
+/* Heading */
 h1 {
   text-align: center;
   font-size: 32px;
   color: #00ffcc;
+  margin-bottom: 5px;
 }
 
 .tagline {
   text-align: center;
-  font-size: 14px;
-  margin-bottom: 20px;
+  font-size: 15px;
   color: #ccc;
+  margin-bottom: 25px;
 }
 
+/* Form fields */
 input, textarea {
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   margin: 10px 0;
+  background: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 7px;
+  font-size: 14px;
+  color: #000;
+  box-sizing: border-box;
 }
 
+/* Button */
 button {
   width: 100%;
-  padding: 12px;
-  background: #00ffcc;
+  padding: 14px;
+  background: #00ffff;
   border: none;
-  color: #000;
+  border-radius: 8px;
   font-weight: bold;
-  border-radius: 5px;
+  font-size: 16px;
+  color: #000;
   cursor: pointer;
-  transition: transform 0.2s ease;
-  box-shadow: 0 5px #197a9d;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-/* Glow on hover */
 button:hover {
-  background: #00cc99;
-  box-shadow: 0 0 15px #00f7ff, 0 0 25px #00f7ff;
+  background: #00ccff;
+  box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
 }
 
-/* Bounce effect on click */
+/* Bounce effect */
 @keyframes bounce {
   0%   { transform: scale(1); }
-  50%  { transform: scale(0.9); }
+  50%  { transform: scale(0.95); }
   70%  { transform: scale(1.05); }
   100% { transform: scale(1); }
 }
+
 button:active {
   animation: bounce 0.3s ease;
-}
-
-/* Shake effect on click */
-@keyframes shake {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-4px); }
-  50% { transform: translateX(4px); }
-  75% { transform: translateX(-4px); }
-  100% { transform: translateX(0); }
-}
-button.shake:active {
-  animation: shake 0.3s ease;
-}
-
-/* Rotate effect on click */
-@keyframes rotate {
-  0% { transform: rotate(0deg); }
-  50% { transform: rotate(10deg); }
-  100% { transform: rotate(0deg); }
-}
-button.rotate:active {
-  animation: rotate 0.3s ease;
 }
